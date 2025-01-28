@@ -1,7 +1,44 @@
-# Analysing Crypto Portfolios
+# Cryptocurrency Portfolio Analysis
 
-The main porpouse of this project is to analyse my current crypto portfolio with different configurations and with return of a single coin. For this, I used mainly investpy and a little pandas. 
+Analyzes different cryptocurrency portfolio strategies using Python. Compares performance of various portfolio allocations across major cryptocurrencies like Bitcoin, Ethereum, and others.
 
-In further analysis, I plan to do differents backtesting with some of the portfolios that I analysed in this project.
+## Quick Start
 
-In case of any question, feel free to contact me. :)
+1. Clone the repository:
+```bash
+git clone https://github.com/sergio-pestana/Crypto_Portfolio_Analysis.git
+cd Crypto_Portfolio_Analysis
+```
+
+2. Set up Python environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+3. Run the analysis:
+```bash
+jupyter notebook Analysis_BTC.ipynb
+```
+
+## Portfolio Strategies
+
+The analysis includes these portfolio allocations:
+
+- **Mercurius**: BTC (65%), ETH (30%), others - BNB, SOL, XRP, ADA and AVAX (5%)
+- **50/30/20**: BTC (50%), ETH (30%), others - BNB, SOL, XRP, ADA and AVAX (20%)
+- **BTC/ETH**: BTC (50%), ETH (50%)
+- **Altcoin Heavy**: BTC (20%), ETH (30%), others - BNB, SOL, XRP, ADA and AVAX (50%)
+- **DeFi Only**: Equal distribution among altcoins (LINK, UNI, AAVE, MKR and CRV)
+- **Meme Coins Only**: Equal distribution among all (DOGE, SHIB, PEPE, FLOKI and BONK)
+
+## Data
+
+- Timeframe: January 2021 - April 2022
+- Daily prices for BTC, ETH, USDC, ADA, DOT, UNI, ATOM, LINK, BNB
+- Data source: Investing.com (via investpy)
+
+## Disclaimer
+
+For educational purposes only. Not financial advice.
